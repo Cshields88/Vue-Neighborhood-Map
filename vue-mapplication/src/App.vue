@@ -11,16 +11,21 @@
   <app-map class="map"></app-map>
 </div>
   </div>
+  <div class="row">
+    <app-detail></app-detail>
+  </div>
 </div>
 </template>
 
 <script>
 import Map from "./components/Map.vue";
 import Locations from "./components/Locations.vue";
+import LocationDetail from "./components/LocationDetail.vue";
 export default {
   components: {
     appLocations: Locations,
-    appMap: Map
+    appMap: Map,
+    appDetail: LocationDetail
   }
 };
 </script>
