@@ -1,5 +1,5 @@
 <template>
-<div class="container-fluid">
+<div class="container" id="main">
   <div class="row">
     <h1>Map SPA</h1>
   </div>
@@ -26,38 +26,10 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+#main {
   margin-top: 60px;
 }
-
-h1,
-h2 {
-  font-weight: normal;
+h1 {
+  margin: 0 0 20px 20px;
 }
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
-/* .map {
-  width: 60%;
-  background-color: black;
-}
-.list {
-  width: 40%;
-} */
 </style>
