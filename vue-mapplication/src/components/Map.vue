@@ -20,19 +20,29 @@ export default {
           longitude: -83.658961
         },
         {
-          latitude: 51.4998973,
-          longitude: -0.202432
+          latitude: 41.809727,
+          longitude: -83.447003
         }
       ]
     };
   },
   mounted: function() {
+    const bounds = new google.maps.LatLngBounds();
     const element = document.getElementById(this.mapName);
+    const mapCentre = this.markerCoordinates[0];
     const options = {
-      zoom: 10,
-      center: new google.maps.LatLng(41.916391, -83.39574)
+      center: new google.maps.LatLng(mapCentre.latitude, mapCentre.longitude),
+      zoom: 8
     };
     const map = new google.maps.Map(element, options);
+    this.markerCoordinates.forEach(coord => {
+      const position = new google.maps.LatLng(coord.latitude, coord.longitude);
+      const marker = new google.maps.Marker({
+        position,
+        map
+      });
+      map.fitBounds(bounds.extend(position));
+    });
   }
 };
 </script>

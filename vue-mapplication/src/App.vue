@@ -1,7 +1,7 @@
 <template>
 <div class="container" id="main">
   <div class="row">
-    <h1>Map SPA</h1>
+    <h1>10 Best Michigan Breweries</h1>
   </div>
   <div class="row">
 <div class="col">
