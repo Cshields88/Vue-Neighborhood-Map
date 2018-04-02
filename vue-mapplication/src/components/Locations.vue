@@ -21,6 +21,7 @@ export default {
       search: ""
     };
   },
+  props: ["locations.name"],
   computed: {
     filteredLocations() {
       return this.locations.filter(location => {
