@@ -12,7 +12,7 @@
 </div>
   </div>
   <div class="row">
-    <app-detail></app-detail>
+    <app-detail :locations="locations"></app-detail>
   </div>
 </div>
 </template>

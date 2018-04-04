@@ -38,7 +38,7 @@ export default {
 <style scoped>
 .google-map {
   width: auto;
-  height: 400px;
+  height: 525px;
   margin: 0 auto;
   background: gray;
 }
