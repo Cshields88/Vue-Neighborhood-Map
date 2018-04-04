@@ -13,15 +13,15 @@
 export default {
   data() {
     return {
-      locations: [
-        { name: "Sterling State Park", type: "Restaurant" },
-        { name: "River Raisin", type: "Store" },
-        { name: "Sunocco", type: "Gas Station" }
-      ],
+      // locations: [
+      //   { name: "Sterling State Park", type: "Restaurant" },
+      //   { name: "River Raisin", type: "Store" },
+      //   { name: "Sunocco", type: "Gas Station" }
+      // ],
       search: ""
     };
   },
-  props: ["locations.name"],
+  props: ["locations"],
   computed: {
     filteredLocations() {
       return this.locations.filter(location => {
