@@ -1,15 +1,18 @@
 <template>
  <div class="details">
-      <h1>{{locations.name}}</h1>
-      <li v-for="hello in locations">{{hello.name}}</li>
+      <h1 v-for="location in locations">{{location.name}} - {{location.url}}</h1>
+      <!-- <li v-for="location in locations">{{location.name}} - {{location.url}}</li> -->
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, consequuntur facilis delectus porro accusamus debitis rerum illo blanditiis corrupti pariatur. Sint, pariatur sequi. Aperiam pariatur earum doloribus sequi! Eaque, reiciendis!</p>
  </div>
 </template>
 <script>
 export default {
-  data() {
-    name: this.locations.name;
-  },
+  // data() {
+  //   return {
+  //     loc: this.locations,
+  //     name: loc.name
+  //   };
+  // },
   props: ["locations"]
 };
 </script>

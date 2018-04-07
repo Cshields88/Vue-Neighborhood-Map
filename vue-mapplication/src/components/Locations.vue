@@ -36,5 +36,9 @@ export default {
   width: 100%;
   padding: 5px;
   margin-bottom: 10px;
+  opacity: 0.6;
+}
+li {
+  color: darkcyan;
 }
 </style>

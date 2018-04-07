@@ -1,7 +1,7 @@
 <template>
 <div class="container" id="main">
   <div class="row">
-    <h1>10 Best Michigan Breweries</h1>
+    <h1 class="text-center">10 Best Michigan Breweries</h1>
   </div>
   <div class="row">
 <div class="col">
@@ -102,5 +102,6 @@ export default {
 }
 h1 {
   margin: 0 0 20px 20px;
+  color: darkcyan;
 }
 </style>
