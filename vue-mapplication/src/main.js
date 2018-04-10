@@ -9,7 +9,7 @@ import "bootstrap-vue/dist/bootstrap-vue.css";
 
 Vue.use(BootstrapVue);
 // Vue.use(VueRouter);
-
+export const locationBus = new Vue();
 // const router = new VueRouter({
 //   routes: routes
 // });

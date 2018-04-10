@@ -21,6 +21,9 @@
 import Map from "./components/Map.vue";
 import Locations from "./components/Locations.vue";
 import LocationDetail from "./components/LocationDetail.vue";
+
+
+
 export default {
   data() {
     return {
