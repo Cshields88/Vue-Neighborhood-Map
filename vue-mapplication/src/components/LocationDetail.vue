@@ -23,8 +23,8 @@ export default {
 
   created() {
     // Using the service bus
-    locationBus.$on("locationSelected", location => {
-      this.location = location;
+    locationBus.$on("locationSelected", function(location) {
+      this.locations = location;
     });
   }
 };
