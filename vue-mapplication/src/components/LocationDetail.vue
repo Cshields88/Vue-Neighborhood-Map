@@ -6,7 +6,7 @@
          Sint, pariatur sequi. Aperiam pariatur earum doloribus sequi! Eaque, reiciendis!</p> -->
 
          <p v-if="!location">Please select a Location</p>
-        <p v-else>Location #{{ location.name }} selected, Status {{ location.url }} </p>
+        <p v-for="(location, i) in locations" :key="i">{{i}} | Location #{{ location.name }} selected, Status {{ location.url }} </p>
 
  </div>
 </template>
@@ -23,7 +23,7 @@ export default {
 
   created() {
     // Using the service bus
-    locationBus.$on("locationSelected", function(location) {
+    locationBus.$on("locationSelected", location => {
       this.locations = location;
     });
   }

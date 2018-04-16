@@ -12,7 +12,7 @@
 </div>
   </div>
   <div class="row">
-    <app-detail :locations="locations"></app-detail>
+    <app-detail v-bind="locations"></app-detail>
   </div>
 </div>
 </template>
