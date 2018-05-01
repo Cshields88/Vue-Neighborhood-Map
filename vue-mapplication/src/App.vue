@@ -12,7 +12,7 @@
 </div>
   </div>
   <div class="row">
-    <app-detail v-bind="locations" @locationSelected="location = $event"></app-detail>
+    <app-detail :locations="locations" @locationSelected="location = $event"></app-detail>
   </div>
 </div>
 </template>

@@ -6,7 +6,9 @@
          Sint, pariatur sequi. Aperiam pariatur earum doloribus sequi! Eaque, reiciendis!</p> -->
 
          <p v-if="!location">Please select a Location</p>
-        <p v-for="(location, i) in locations" :key="i">{{i}} | Location #{{ location.name }} selected, Status {{ location.url }} </p>
+        <p v-else
+         v-for="(location, i) in locations" 
+         :key="location.name">{{i}} | Location #{{ location.name }} selected, Status {{ location.url }} </p>
 
  </div>
 </template>
@@ -19,13 +21,21 @@ export default {
       location: null
     };
   },
+  // props: {
+  //   locations: Array
+  // },
   props: ["locations"],
 
   created() {
     // Using the service bus
     locationBus.$on("locationSelected", location => {
       this.locations = location;
+      console.log("Clicked Location");
     });
+
+    // EventBus.$on('i-got-clicked', clickCount => {
+    //   console.log(`Oh, that's nice. It's gotten ${clickCount} clicks! :)`)
+    // });
   }
 };
 </script>
