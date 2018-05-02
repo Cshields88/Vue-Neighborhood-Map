@@ -2,7 +2,7 @@
 <div>
    <input class="search" type="text" v-model="search" placeholder="Search Locations">
         <ul class="list-group">
-            <li class="list-group-item" v-for="(location, index) in filteredLocations" @click="locationSelected">{{location.name}}</li>
+            <li class="list-group-item" v-for="(location, index) in filteredLocations" :index="index" @click="locationSelected">{{location.name}}</li>
             
         </ul>
     
