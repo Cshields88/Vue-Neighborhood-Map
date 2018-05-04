@@ -25,7 +25,7 @@ export default {
   },
   props: ["locations"],
   methods: {
-    locationSelected() {
+    locationSelected(locations) {
       locationBus.$emit("locationSelected", this.locations);
     }
   },
